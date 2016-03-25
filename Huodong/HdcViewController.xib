@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HdcViewController">
+            <connections>
+                <outlet property="textfild" destination="rkN-6Z-SXO" id="ZBC-w4-nDE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-cb-yVa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkN-6Z-SXO">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rkN-6Z-SXO" secondAttribute="trailing" id="DML-Gs-M3A"/>
+                        <constraint firstAttribute="bottom" secondItem="rkN-6Z-SXO" secondAttribute="bottom" constant="355" id="WAO-b9-cS1"/>
+                        <constraint firstItem="rkN-6Z-SXO" firstAttribute="leading" secondItem="G6b-cb-yVa" secondAttribute="leading" id="fhC-eZ-ASQ"/>
+                        <constraint firstItem="rkN-6Z-SXO" firstAttribute="top" secondItem="G6b-cb-yVa" secondAttribute="top" id="ruT-Bs-NdE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254908080000002" green="0.40392160420000001" blue="0.180392161" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="G6b-cb-yVa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U3g-jy-7ri"/>
+                <constraint firstItem="G6b-cb-yVa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UKF-W6-5FI"/>
+                <constraint firstAttribute="trailing" secondItem="G6b-cb-yVa" secondAttribute="trailing" id="jWs-TS-13O"/>
+                <constraint firstAttribute="bottom" secondItem="G6b-cb-yVa" secondAttribute="bottom" id="kZR-8u-g8X"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

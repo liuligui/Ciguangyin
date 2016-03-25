@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YGMyGongDeCtr">
+            <connections>
+                <outlet property="btn1" destination="kZl-UE-IEF" id="eg6-Ci-vgB"/>
+                <outlet property="btn2" destination="z4J-PY-yZH" id="JB9-My-FI0"/>
+                <outlet property="text" destination="bkn-vK-vYs" id="qzj-el-4DL"/>
+                <outlet property="text1" destination="0fl-9c-EbI" id="EGS-kT-hm2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suixi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iRL-1J-C62">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="335"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkn-vK-vYs">
+                    <rect key="frame" x="26" y="373" width="269" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  其他" minimumFontSize="17" background="bg_merit_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="0fl-9c-EbI">
+                    <rect key="frame" x="223" y="341" width="61" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4J-PY-yZH">
+                    <rect key="frame" x="130" y="341" width="61" height="26"/>
+                    <state key="normal" title="￥100" backgroundImage="bg_merit_normal.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="bg_merit_normal.png"/>
+                    <state key="highlighted" backgroundImage="bg_merit_normal.png"/>
+                    <connections>
+                        <action selector="btn2:" destination="-1" eventType="touchUpInside" id="msx-JY-7Rl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b4-8F-Xci">
+                    <rect key="frame" x="267" y="343" width="17" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZl-UE-IEF">
+                    <rect key="frame" x="33" y="341" width="61" height="26"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="￥50" backgroundImage="bg_merit_pressed.9.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="bg_merit_pressed.9.png"/>
+                    <state key="selected" backgroundImage="bg_merit_pressed.9.png"/>
+                    <state key="highlighted" backgroundImage="bg_merit_pressed.9.png"/>
+                    <connections>
+                        <action selector="btn1:" destination="-1" eventType="touchUpInside" id="G3I-gw-iOa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFv-Ua-aBH">
+                    <rect key="frame" x="12" y="425" width="297" height="47"/>
+                    <inset key="titleEdgeInsets" minX="-550" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="随喜" image="btnmo.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="paybtn:" destination="-1" eventType="touchUpInside" id="YlP-5G-fsf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="349" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_merit_normal.png" width="60" height="25"/>
+        <image name="bg_merit_pressed.9.png" width="61" height="26"/>
+        <image name="btnmo.png" width="540" height="86"/>
+        <image name="suixi.jpg" width="960" height="854"/>
+    </resources>
+</document>
